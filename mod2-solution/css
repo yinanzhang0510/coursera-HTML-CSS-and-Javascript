@@ -1,1 +1,48 @@
 
+#container {
+    width: 100%;
+}
+
+#first,#second,#third {
+    height: 100px;
+    float: left;
+    padding: 0;
+    margin: 0;
+}
+h1 {
+    text-align: center;
+}
+h2{
+    text-align: right;
+}
+#first,#second,#third {
+    margin: 5px;
+    border:1px solid black;
+    
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+    background-color: coral;
+}
+
+
+
+@media only screen and (max-width: 767px) {
+    #first,#second,#third {
+        width: 100%;
+    }
+}
+@media  only screen and (min-width: 768px) and (max-width:991px ) {
+      #first,#second {
+        width: 50%;
+    }
+        #third {
+            width: 100%;
+    }
+}
+@media  only screen and (min-width: 992px) {
+     #first,#second,#third {
+        width: 33.33%;
+    }
+    
+}
